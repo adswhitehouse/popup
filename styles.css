@@ -86,7 +86,10 @@ body {
   border-radius: 0.5rem;
   padding: 1rem;
   color: #2c3536;
-  top: -15rem;
+  top: -150%;
+  bottom: 0;
+  margin-block: auto;
+  height: fit-content;
   transform: scale(0);
 }
 
@@ -96,11 +99,11 @@ body {
 
 @keyframes visible {
   from {
-    top: -15rem;
+    top: -150%;
     transform: scale(0);
   }
   to {
-    top: 32.5%;
+    top: 0;
     transform: scale(1);
   }
 }
