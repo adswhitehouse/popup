@@ -52,6 +52,80 @@ select {
 }
 /* CSS Reset */
 
+/* Body */
 body {
   font-family: "Roboto", serif;
+  background-color: #395078;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Submit Button */
+.submit {
+  background-color: #fefefe;
+  padding: 1rem 3rem;
+  font-size: 1.25rem;
+  border: none;
+  border-radius: 10rem;
+  cursor: pointer;
+  border: 0.25rem solid #fefefe;
+  color: #395078;
+  transition: color 0.5s, background-color 0.5s;
+}
+
+.submit:hover {
+  background-color: transparent;
+  color: #fefefe;
+}
+
+.submit:active {
+  transform: scale(0.95);
+}
+
+/* Popup */
+.popup {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  width: 20rem;
+  background-color: #fefefe;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  color: #2c3536;
+}
+
+.popup h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-block: 3rem 0.5rem;
+}
+
+.popup button {
+  background-color: #62b840;
+  width: 100%;
+  padding-block: 0.25rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0.25rem;
+  color: #fefefe;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+  margin-top: 2rem;
+}
+
+.check-decoration {
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  background-color: #62b840;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: #fefefe;
+  top: -2.5rem;
 }
