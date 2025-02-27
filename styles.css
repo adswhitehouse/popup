@@ -72,16 +72,6 @@ body {
   cursor: pointer;
   border: 0.25rem solid #fefefe;
   color: #395078;
-  transition: color 0.5s, background-color 0.5s;
-}
-
-.submit:hover {
-  background-color: transparent;
-  color: #fefefe;
-}
-
-.submit:active {
-  transform: scale(0.95);
 }
 
 /* Popup */
@@ -96,6 +86,23 @@ body {
   border-radius: 0.5rem;
   padding: 1rem;
   color: #2c3536;
+  top: -15rem;
+  transform: scale(0);
+}
+
+.animation {
+  animation: visible 2s forwards;
+}
+
+@keyframes visible {
+  from {
+    top: -15rem;
+    transform: scale(0);
+  }
+  to {
+    top: 32.5%;
+    transform: scale(1);
+  }
 }
 
 .popup h1 {
@@ -114,6 +121,7 @@ body {
   color: #fefefe;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
   margin-top: 2rem;
+  cursor: pointer;
 }
 
 .check-decoration {
@@ -128,4 +136,11 @@ body {
   font-size: 3rem;
   color: #fefefe;
   top: -2.5rem;
+}
+
+/* Media Query */
+@media screen and (max-width: 22rem) {
+  .popup {
+    width: calc(100vw - 2rem);
+  }
 }
